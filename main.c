@@ -190,5 +190,8 @@ int main()
         manual(x_start, x_stop, step, precision, width, vybrane_funkcie, pocet_vybranych_funkcii);
     }
 
+    char ukoncovaci_znak;
+    printf("\nPre ukoncenie stlac lubovolny symbol: ");
+    scanf("%c", &ukoncovaci_znak);
     return 0;
 }

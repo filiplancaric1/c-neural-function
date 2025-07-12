@@ -172,16 +172,25 @@ int main()
 
     if (uspesne_prebehnutie == 0) {
         printf("E1");
+        printf("\nPre ukoncenie stlac lubovolny symbol: ");
+        while (getchar() != '\n');
+        getchar();
         return 0;
     }
 
     if (x_start >= x_stop) {
         printf("E2");
+        printf("\nPre ukoncenie stlac lubovolny symbol: ");
+        while (getchar() != '\n');
+        getchar();
         return 0;
     }
 
     if (pocet_vybranych_funkcii == 0 && zapnutie_manualu == 0) {
         automaticky_vypis(x_start, x_stop, step, precision, width);
+        printf("\nPre ukoncenie stlac lubovolny symbol: ");
+        while (getchar() != '\n');
+        getchar();
         return 0;
     }
 
@@ -190,8 +199,8 @@ int main()
         manual(x_start, x_stop, step, precision, width, vybrane_funkcie, pocet_vybranych_funkcii);
     }
 
-    char ukoncovaci_znak;
     printf("\nPre ukoncenie stlac lubovolny symbol: ");
-    scanf("%c", &ukoncovaci_znak);
+    while (getchar() != '\n');
+    getchar();
     return 0;
 }

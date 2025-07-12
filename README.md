@@ -1,56 +1,38 @@
-# c-neural-function
+# c-neural-functions
+This project calculates and displays tables with values of the most common neural activation functions.
+The program is written in the C programming language and was created as a school assignment.
 
-Tento projekt slúži na výpočet a zobrazenie tabuliek s hodnotami najčastejších aktivačných funkcií neurónov.
+# how to use
+Run the file main.exe.
+Upon execution, the program expects the following values from standard input:
 
-Program je napísaný v jazyku C. Preklad a spustenie:
+xstart xstop step precision width [functions...] X
+xstart, xstop – range of x values (e.g., -5 5)
 
-Program je napísaný v jazyku C. Preklad a spustenie:
+xstart – starting value
+xstop – ending value
+step – step between values (e.g., 0.5)
+precision – number of decimal places in the output
+width – column width in the output
+functions – optional numbers of activation functions to use (e.g., 1 2 5)
+X – any non-numeric character to terminate the input (e.g., x or m)
 
-gcc z1.c -o z1 -lm
-./z1
-
-Vstupné údaje
-Pri spustení program očakáva nasledujúce hodnoty zo štandardného vstupu:
-
-Kopírovať
-Upraviť
-xstart xstop step precision width [funkcie...] X
-xstart, xstop – rozsah hodnôt x (napr. -5 5)
-
-step – krok medzi hodnotami (napr. 0.5)
-
-precision – počet desatinných miest vo výstupe
-
-width – šírka stĺpca vo výpise
-
-funkcie – voliteľné čísla aktivačných funkcií (napr. 1 2 5)
-
-X – nenumerický znak na ukončenie vstupu (napr. x alebo m)
-
-Aktivačné funkcie
-Číslo	Funkcia
-1	Binárna skoková funkcia
+Activation Functions
+Number	Function
+1	Binary step function
 2	ReLU
 3	Squareplus
-4	Gaussova
-5	Hyperbolický tangens
+4	Gaussian
+5	Hyperbolic tangent
 6	Swish
 
-Príklady použitia
-Auto režim (vypočíta všetky funkcie)
-bash
-Kopírovať
-Upraviť
-./z1
+Examples
+Auto mode (computes all functions):
 -5 5 1 2 10 x
 
-Manuálny režim (len vybrané funkcie)
-bash
-Kopírovať
-Upraviť
-./z1
+Manual mode (only selected functions):
 -2 2 0.5 3 8 1 3 5 m
-Chybové hlášky
-E1 – neúplné alebo nečíselné vstupy
 
-E2 – xstart ≥ xstop (neplatný interval)
+Error Messages
+E1 – incomplete or non-numeric input
+E2 – xstart ≥ xstop (invalid interval)

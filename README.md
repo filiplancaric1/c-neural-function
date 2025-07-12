@@ -1,5 +1,5 @@
 # c-neural-functions
-This project calculates and displays tables with values of the most common neural activation functions.
+This project calculates and displays tables with values of the most common neural activation functions.\n
 The program is written in the C programming language and was created as a school assignment.
 
 # how to use
@@ -28,10 +28,14 @@ Number	Function
 
 Examples
 Auto mode (computes all functions):
--5 5 1 2 10 x
+
+<img width="869" height="345" alt="image" src="https://github.com/user-attachments/assets/dee553fa-27aa-42dc-a6f8-e12e768138be" />
+
 
 Manual mode (only selected functions):
--2 2 0.5 3 8 1 3 5 m
+
+<img width="980" height="154" alt="image" src="https://github.com/user-attachments/assets/2f6a3b5e-e3ef-4f18-842f-353097c2eec6" />
+
 
 Error Messages
 E1 – incomplete or non-numeric input

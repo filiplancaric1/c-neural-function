@@ -35,6 +35,6 @@ Manual mode (only selected functions):
 
 <img width="980" height="154" alt="image" src="https://github.com/user-attachments/assets/2f6a3b5e-e3ef-4f18-842f-353097c2eec6" />
 
-Error Messages
+Error Messages<br>
 E1 – incomplete or non-numeric input<br>
 E2 – xstart ≥ xstop (invalid interval)
